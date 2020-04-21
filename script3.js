@@ -25,12 +25,13 @@ document.getElementById('cur_time').textContent="00:00";
 }
 
 $(document).ready(function () {
+
   let isTimerGo=false;
   let timer;
   $("#btn_go").click(function() {
     isTimerGo=!isTimerGo;
     if(isTimerGo){
-      timer=setInterval(function(){ changeTimer(); }, 1000);
+      timer=setInterval(changeTimer, 1000);
     }
     else{
       clearInterval(timer);

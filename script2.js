@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   $.getJSON( "http://dummy.restapiexample.com/api/v1/employees", function( dataList ) {
-    console.log(dataList.data);
+    console.log(dataList);
     dataList.data.forEach(function functionName(elem) {
         //employee_age: "61" employee_name: "Tiger Nixon" employee_salary: "320800" id: "1"
         let div = $("<div ></div>");
